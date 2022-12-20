@@ -1,0 +1,129 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    overflow-x: hidden;
+    background-color: #FBFBFB;
+}
+.hederdiv
+{
+    width: 100vw;
+    height: 500px;
+    background-color: #4F0707;
+    /* background-image:url("/images/background.png"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: centre;
+}
+.hederdiv nav
+{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+.hederdiv nav ul
+{
+    float: right;
+    display: flex;
+    list-style: none;
+}
+.hederdiv nav ul li
+{
+    margin-right: 50px;
+    padding: 5px;
+}
+.hederdiv nav ul li:nth-child(2)
+{
+    border: 2px white solid;
+}
+.container
+{
+    position:absolute;
+    width: 80%;
+    /* height: 70%; */
+    /* background-color: black; */
+    color:white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 10px;
+}
+.container h1
+{
+    text-align: center;
+    overflow: hidden;
+    /* width:70px;
+    height:100px; */
+    font-size:4em;
+    /* background-color: #4F0707; */
+    /* border-radius: 100%; */
+}
+.container p
+{
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.container input
+{
+    width: 150px;
+    height: 30px;
+    text-decoration: none;
+    border: 1px black;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.container input[type='search']
+{
+    width: 300px;
+}
+.items
+{
+    width: 100vw;
+    height: auto;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.items div
+{
+    /* flex:1 0 30%; */
+    width: 30%;
+    /* min-width: 10%; */
+    margin:1%;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    /* border-radius: 10px; */
+    box-shadow: 0 0 10px #00000029;
+}
+
+@media screen and (max-width:900px) {
+
+    .items div 
+    {
+        min-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+}
+.items div img
+{
+    height: 100%;
+    width: 40%;
+    margin-right: 2%;
+}
+.items div p
+{
+    font-weight: 500;
+    padding: 20px
+}
+
+
